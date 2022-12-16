@@ -1,0 +1,16 @@
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.post {
+    padding: 5px;
+}
+.thumb-post-completo img{
+    width: 100%;
+    height: 580px;
+}
+.data-post {
+    margin-left: 10px;
+}
+
