@@ -21,8 +21,10 @@ class UserFactory extends Factory
         return [
             'firsName' => fake()->firstName(),
             'lastName' => fake()->lastName(),
-            'email' => fake()->unique()->safeEmail(),
-            'thumb' => str_replace('public', '', $thumb),
+            'email'    => fake()->unique()->safeEmail(),
+            'admin'    => rand(1, 0),
+            'client'   => rand(1,0),
+            'thumb'    => str_replace('public', '', $thumb),
             'password' => bcrypt('123'), // password
         ];
     }

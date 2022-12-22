@@ -20,6 +20,8 @@ class User extends Authenticatable
     protected $fillable = [
         'name',
         'email',
+        'admin',
+        'client',
         'password',
     ];
 
@@ -41,6 +43,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function getFullnameAttribute()
+    {
+        return $this->firsName . ' ' . $this->lastName;
+    }
 
     public function comments()
     {

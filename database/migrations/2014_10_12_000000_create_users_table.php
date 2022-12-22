@@ -18,6 +18,8 @@ return new class extends Migration
             $table->string('firsName');
             $table->string('lastName');
             $table->string('email')->unique();
+            $table->boolean('admin')->nullable();
+            $table->boolean('client')->nullable();
             $table->string('password');
             $table->string('thumb');
             $table->timestamps();

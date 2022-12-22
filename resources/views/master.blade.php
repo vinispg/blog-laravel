@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>{{$title}}</title>
+    <!-- Font Awesome vini -->
+    <script src="https://kit.fontawesome.com/70024fc9a9.js" crossorigin="anonymous"></script>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
     <!-- Google Fonts Roboto -->
@@ -16,6 +18,7 @@
 </head>
 <body>
 <header>
+
     <!-- Intro settings -->
     <style>
         #intro {
@@ -37,7 +40,7 @@
     <!-- Navbar -->
 
 <div id="intro" class="p-5 text-center bg-light">
-    @yield('header-intro')
+    @include('partials.header')
 </div>
 
     <!-- Jumbotron -->
@@ -58,6 +61,9 @@
 </footer>
 <!--Footer-->
 <!-- MDB -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="{{ URL::asset("js/mdb.min.js") }}"></script>
 <!-- Custom scripts -->
 <script type="text/javascript" src="{{ URL::asset("js/script.js") }}></script>
